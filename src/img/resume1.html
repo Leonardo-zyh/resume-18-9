@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>曾宇豪的个人简历</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./loading.css">
+    <script src="https://at.alicdn.com/t/font_741392_06iibopbn0lq.js"></script>
+    <style type="text/css">
+      .icon {
+         width: 1em; height: 1em;
+         vertical-align: -0.15em;
+         fill: currentColor;
+         overflow: hidden;
+      }
+      .site-wlecome{
+        display: none;
+        position: fixed;
+        top: 0;left:0;width: 100%;height: 100%;
+        background: grey;
+        z-index: 2;
+        justify-content: center;
+        align-items: center;
+        
+        }
+      .site-wlecome.active{
+        display: flex;
+      }
+  </style>
+
+  
+  </head>
+  <body>
+    <div id="siteWelcome" class="site-wlecome active">
+      <div class="loading"></div>
+    </div>
+    <div id="topNavBar" class="topNavBar">
+      <div class="inner clearfix">
+      <a class="logo" href="#" alt="logo" style="float: left; ">
+        <span class="rs">RS</span>
+        <span class="card">card</span>
+      </a>
+      <nav class="menu" style="float: right;">
+        <ul class="clearfix">
+          <li  ><a href="#siteAbout">关于</a></li>
+          <li  ><a href="#siteSkill">技能</a><ul  class="submenu ">
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Vue</li>
+          </ul></li>
+          <li  ><a  href="#siteWork">作品</a>
+          <ul  class="submenu ">
+            <li>作品1</li>
+            <li>作品2</li>
+            <li>作品3</li>
+          </ul></li>
+          <li  ><a  href="#siteBlog">博客</a>
+          <ul  class="submenu ">
+            <li>博客1</li>
+            <li>博客2</li>
+            <li>博客3</li>
+          </ul></li>
+          <li  ><a href="#siteCalendar">日历</a></li>
+          <li  ><a href="#siteContact">联系方式</a></li>
+          <li  ><a href="#siteOthers">其他</a></li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+    
+    <div class="banner">
+      <div class="mask"></div>
+    </div>
+   
+    <main>
+      <div id="siteAbout" class="usercard">
+        <div class="pictureAndText clearfix">
+          <div class="picture">
+            <img src="./img/avatar.jpg" alt="头像" >
+          </div>
+          <div class="text">
+            <div class="profile">
+              <span class="welcome">Hello
+                <span class="triangle"></span>
+              </span>
+
+              <h1>曾宇豪</h1>
+              <p>前端开发工程师</p>
+              <hr>
+              <dl class="clearfix">
+                <dt>年龄</dt>
+                <dd>21</dd>
+                <dt>所在城市</dt>
+                <dd>重庆</dd>
+                <dt>邮箱</dt>
+                <dd>956731563@qq.com</dd>
+                <dt>手机</dt>
+                <dd>1521521xxxx</dd>
+              </dl>
+            </div>
+          </div>
+        </div>
+        <footer class="media">
+          
+             
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weixin"></use>
+          </svg></a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-github1"></use>
+          </svg></a>
+          <a href="#">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-weibo"></use>
+          </svg></a>
+          
+          
+        </footer>
+      </div>
+      <div class="downloadA">
+          <a class="dowenland" href="./img/rs-cover.jpg" target="_blank" download="">下载 PDF 简历</a>
+      </div>
+
+      
+
+      <p class="introduce">
+        曾宇豪， 前端工程师，现在进修前端课程中。<br>
+        技能：前端开发，Rails 开发，Node.js 开发
+      </p>
+
+    </main>
+    <section id="siteSkill" class="skills">
+      <h2>技能</h2>
+      <ol class="clearfix">
+        <li>
+          <h3>HTML 5 &amp; CSS 3</h3>
+          <div class="progress">
+            <div class="progress-inner"></div>
+          </div>
+        </li>
+        <li>
+            <h3>JavaScript</h3>
+            <div class="progress">
+              <div class="progress-inner"  style="width:65%;"></div>
+            </div>
+        </li>
+        <li>
+            <h3>jQuery</h3>
+            <div class="progress">
+                <div class="progress-inner" style="width:50%;"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Vue</h3>
+            <div class="progress">
+                  <div class="progress-inner" style="width:45%;"></div>
+            </div>
+        </li>
+        <li>
+            <h3>React</h3>
+            <div class="progress">
+                    <div class="progress-inner" style="width:40%;"></div>
+            </div>
+        </li>
+        <li>
+            <h3>Node.js</h3>
+            <div class="progress">
+            <div class="progress-inner" style="width:40%"></div>
+            </div>
+        </li>
+      </ol>
+    </section>
+    <section id="siteWork" class="protfolio">
+      <h2>作品集</h2>
+      <nav>
+          <ol class="clearfix">
+              <li id="portfolio1">所有</li>
+              <li id="portfolio2">框架</li>
+              <li id="portfolio3">原生JS&amp;CSS</li>
+            </ol>
+            <div id="portfolioBar" class="bar state-1">
+              <div class="bar-inner"></div>
+            </div>
+          </nav>
+          <script>
+            portfolio1.onclick= function(){
+              portfolioBar.className = 'bar state-1'
+            }
+            portfolio2.onclick= function(){
+              portfolioBar.className = 'bar state-2'
+            }
+            portfolio3.onclick= function(){
+              portfolioBar.className = 'bar state-3'
+            }
+          </script>
+
+      <div class="works">
+        <div class="big">
+          <img src="./img/1.jpg" alt="作品1">
+        </div>
+        <div class="small1">
+          <img src="./img/2.jpg" alt="作品2">
+        </div>
+        <div class="small2">
+          <img src="./img/3.jpg" alt="作品3">
+        </div>
+      </div>
+
+    </section>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/17.2.0/Tween.min.js"></script>
+  <script>
+    setTimeout(function(){    //指定时间后调用函数
+    siteWelcome.classList.remove('active');
+    },1000)
+    
+    window.onscroll = function(){   //滚动时触发
+      if(window.scrollY >150){
+        topNavBar.classList.add('sticky')
+      }else{
+        topNavBar.classList.remove('sticky')
+      }
+    }
+
+    let liTags = document.querySelectorAll('nav.menu > ul >li')    //查询选择器所有
+    for(let i=0; i<liTags.length;i++) {
+      liTags[i].onmouseenter = function(x){     //当入时触发
+      x.currentTarget.classList.add('active')
+      }
+
+      liTags[i].onmouseleave = function(x){     //当移出触发
+      x.currentTarget.classList.remove('active')  
+      }
+    }
+    
+    let aTags = document.querySelectorAll('nav.menu > ul >li>a')
+    for(let i=0; i<aTags.length;i++) {
+      aTags[i].onclick = function(x){
+        x.preventDefault()                 //阻止原本作用
+       // let a = x.currentTarget
+       // let href = a.getAttribute('href')  //'#siteAboutb'
+       // let element = document.querySelector(href)
+       // let top = element.offsetTop        //元素顶边(页面顶部)
+        let top = document.querySelector(x.currentTarget.getAttribute('href')).offsetTop
+        
+        let n = 25
+        let t = 500/n
+        let currentTop = window.scrollY
+        let targetTop = top - 80
+        let distance = (targetTop-currentTop)/n
+        var i = 0
+        let id = setInterval(()=> {
+          if(i===n){
+            window.clearInterval(id)  //解除计时器
+            return
+          }
+          i = i+1
+          window.scrollTo(0,currentTop + distance*i )
+        },t)
+      }
+    }
+</script>
+</html>
