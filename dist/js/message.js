@@ -61,7 +61,7 @@
         let li = document.createElement('li');
         li.innerText = `${object.attributes.name}: ${object.attributes.content}`;
         let messageList = document.querySelector('#messageList');
-        messageList.appendChild(li);
+        messageList.prepend(li);
         myForm.querySelector('input[name=content]').value = ''; //alert('留言成功')
 
         console.log(object);
